@@ -1,0 +1,18 @@
+{
+	"icon": "opera",
+	"label": "Opera",
+	"description": "Fast and secure web browser",
+	"license": "",
+	"category": "Repositories",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root apt remove -y opera-*"
+		},
+		"status": { "command": "dpkg-query -l opera-stable" }
+	}
+}
