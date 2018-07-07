@@ -1,21 +1,13 @@
 #!/bin/bash
 
-dpkg --add-architecture i386
 apt update
-apt install default-jdk  libxtst6:i386
-
-
-if [[ "$(uname -m)" = "x86_64" ]]; then
-	ARCH="64"
-else
-	ARCH="32"
-fi
+apt install default-jdk  libxtst6
 
 CACHEDIR="/var/cache/cedema/";
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
 VERSION=$(wget "https://www.arduino.cc/en/Main/ReleaseNotes" -O - | grep -Po "ARDUINO [0-9.]{5}" | head -n 1 | cut -c 9-)
-FILE=arduino-$VERSION-linux$ARCH.tar.xz
+FILE=arduino-$VERSION-linux64.tar.xz
 URL=https://downloads.arduino.cc/$FILE
 
 wget -c "$URL" -O "$FILE"
