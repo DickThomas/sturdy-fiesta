@@ -11,23 +11,19 @@ else
 	ARCH="32"
 fi
 
-
-
-
-CACHEDIR="/var/cache/cedema";
+CACHEDIR="/var/cache/cedema/";
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
-VERSION=$(wget "https://www.ardui   no.cc/en/Main/ReleaseNotes" -O - | grep -Po "ARDUINO [0-9.]{5}" | head -n 1 | cut -c 9-)
+VERSION=$(wget "https://www.arduino.cc/en/Main/ReleaseNotes" -O - | grep -Po "ARDUINO [0-9.]{5}" | head -n 1 | cut -c 9-)
 FILE=arduino-$VERSION-linux$ARCH.tar.xz
-URL=https://www.arduino.cc/download_handler.php?f=/arduino-1.8.5-linux64.tar.xz
-MD5=checksums.md5
+URL=https://downloads.arduino.cc/$FILE
+
 wget -c "$URL" -O "$FILE"
 
 
 
 
 if md5sum -c /opt/cedema/plugins/arduino.plugin/checksums.md5; then
-   
     echo "MD5 match"
     tar -xf "$FILE" -C "/opt/"
     mv "/opt/arduino-$VERSION" "/opt/arduino"
