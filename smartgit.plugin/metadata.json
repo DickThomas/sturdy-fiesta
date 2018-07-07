@@ -12,6 +12,6 @@
 			"label": "Remove",
 			"command": "run-as-root apt remove -y smartgit"
 		},
-		"status": { "command": "dpgk-query -l smartgit" }
+		"status": { "command": "dpkg-query -l smartgit" }
 	}
 }
