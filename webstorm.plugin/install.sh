@@ -6,15 +6,8 @@ CACHEDIR="/var/cache/adaptigo/webstorm";
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
 
-URL=$(wget "https://data.services.jetbrains.com/products/releases?code=WS&latest=true" -O - | grep -o "https://download.jetbrains.com/webstorm/WebStorm-[0-9a-z.]*.tar.gz" | head -n 1)
-FILE=${URL##*/}
-
-wget -c "$URL" -O "$FILE"
-
-if [[ ! -f "$FILE" ]]; then
-	exit 1
-fi
-
+URL=https://download.jetbrains.com/webstorm/WebStorm-2018.1.5.tar.gz
+wget -c $URL
 tar -xzf "$FILE" -C "/opt/"
 
 mv /opt/WebStorm* "/opt/WebStorm"
