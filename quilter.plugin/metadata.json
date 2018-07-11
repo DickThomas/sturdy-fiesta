@@ -1,7 +1,7 @@
 {
-	"icon": "dino",
-	"label": "Dino XMPP Client",
-	"description": "Modern Jabber/XMPP Client using GTK+/Vala",
+	"icon": "quilter",
+	"label": "Quilter Editor",
+	"description": "Modern distraction free editor",
 	"license": "GNU General Public License v3.0",
 	"libre": true,
 	"category": "Apps",
