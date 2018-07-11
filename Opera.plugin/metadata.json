@@ -13,6 +13,6 @@
 			"label": "Remove",
 			"command": "run-as-root apt remove -y opera-*"
 		},
-		"status": { "command": "dpkg-query -l opera-stable" }
+		"status": { "command": "test -f /opt/android-studio/bin/studio.sh" }
 	}
 }
