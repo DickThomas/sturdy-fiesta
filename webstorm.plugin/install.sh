@@ -6,11 +6,16 @@ CACHEDIR="/var/cache/adaptigo/webstorm";
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
 
-URL=https://download.jetbrains.com/webstorm/WebStorm-2018.1.5.tar.gz
-wget -c $URL
-tar -xvf "$FILE" -C "/opt/"
+URL=$(wget "https://data.services.jetbrains.com/products/releases?code=WS&latest=true" -O - | grep -o "https://download.jetbrains.com/webstorm/WebStorm-[0-9a-z.]*.tar.gz" | head -n 1)
+FILE=${URL##*/}
 
-ln -sf "/opt/WebStorm/bin/webstorm.sh" "/usr/bin/webstorm"
+wget -c "$URL" -O "$FILE"
+
+wget -c "$URL" -O "$FILE"
+
+rm -rf "/opt/WebStorm"
+tar xvf "$FILE" -C "/opt/"
+
 
 xdg-icon-resource install --novendor --size 128 "/opt/WebStorm/bin/webide.png" "webstorm"
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
