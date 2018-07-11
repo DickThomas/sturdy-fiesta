@@ -11,7 +11,7 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root apt -y remove insync"
+			"command": "run-as-root apt -y purge insync"
 		},
 		"status": { "command": "dpkg-query -l insync" }
 	}
