@@ -14,6 +14,6 @@
 			"label": "Remove",
 			"command": "run-as-root -s uninstall.sh"
 		},
-		"status": { "command": "test -f /opt/WebStorm/bin/webstorm.sh" }
+		"status": { "command": "test -f /opt/WebStorm-181.5281.31/bin/webstorm.sh" }
 	}
 }
