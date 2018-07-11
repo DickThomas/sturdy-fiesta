@@ -7,7 +7,6 @@ FILE=ideaIC.tar.gz
 
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
-rm $FILE
 URL=https://download.jetbrains.com/python/pycharm-community-2016.3.2.tar.gz
 
 wget -c "$URL" -O "$FILE"
@@ -15,7 +14,7 @@ wget -c "$URL" -O "$FILE"
 if [[ ! -f "$FILE" ]]; then
 	exit 1
 fi
-
+rmdir  -Rfv "/opt/pycharm"
 mkdir -p "/opt/pycharm"
 tar -xvf "$FILE" -C "/opt/pycharm/"
 
