@@ -6,4 +6,4 @@ gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 
 rm -f "/usr/bin/webstorm"
 rm -f "/usr/share/applications/webstorm.desktop"
-rm -rf "/opt/WebStorm*"
+rm -Rfv "/opt/WebStorm*"
