@@ -16,7 +16,7 @@ mkdir -p "/opt/clion/"
 tar -xzf "$FILE" -C "/opt/clion" --strip-components=1
 ln -sf "/opt/clion/bin/clion.sh" "/usr/bin/clion"
 
-xdg-icon-resource install --novendor --size 128 "/opt/clion/bin/clion.svg" "clion"
+xdg-icon-resource install --novendor --size 128 "/opt/clion/bin/clion.png" "clion"
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 
 cat <<EOF | tee /usr/share/applications/clion.desktop
