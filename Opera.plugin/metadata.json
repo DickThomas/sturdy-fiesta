@@ -6,7 +6,7 @@
 	"category": "Repositories",
 	"scripts": {
 		"exec": {
-			"label": "Install",
+			"label": "Install (doesn't mark as installed",
 			"command": "run-as-root -s install.sh"
 		},
 		"undo": {
