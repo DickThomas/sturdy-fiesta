@@ -8,9 +8,8 @@ cd "$CACHEDIR"
 
 URL=https://download.jetbrains.com/webstorm/WebStorm-2018.1.5.tar.gz
 wget -c $URL
-tar -xzf "$FILE" -C "/opt/"
+tar -xvf "$FILE" -C "/opt/"
 
-mv /opt/WebStorm* "/opt/WebStorm"
 ln -sf "/opt/WebStorm/bin/webstorm.sh" "/usr/bin/webstorm"
 
 xdg-icon-resource install --novendor --size 128 "/opt/WebStorm/bin/webide.png" "webstorm"
