@@ -13,6 +13,6 @@
 			"label": "Remove",
 			"command": "run-as-root apt remove -y opera-*"
 		},
-		"status": { "command": "fgrep -q opera /etc/apt/source.list" }
+		"status": { "command": "fgrep opera /etc/apt/source.list" }
 	}
 }
