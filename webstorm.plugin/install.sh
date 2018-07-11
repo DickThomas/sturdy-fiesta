@@ -25,7 +25,7 @@ cat <<EOF | tee /usr/share/applications/webstorm.desktop
 Name=WebStorm
 Icon=webstorm
 Comment=The Smartest JavaScript IDE
-Exec=webstorm
+Exec=/opt/WebStorm-181.5281.31/bin/webstorm.sh
 Terminal=false
 Type=Application
 StartupNotify=true
