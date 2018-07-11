@@ -10,9 +10,9 @@
 			"command": "run-as-root -s install.sh"
 		},
 		"undo": {
-			"label": "Remove",
-			"command": "run-as-root apt remove -y opera-*"
+			"label": "Sorry no remove, yet",
+			"command": ""
 		},
-		"status": { "command": "grep -cim1 opera /etc/apt/source.list" }
+		"status": { "command": "" }
 	}
 }
