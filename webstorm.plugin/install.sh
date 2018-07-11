@@ -17,7 +17,7 @@ rm -rf "/opt/WebStorm"
 tar xvf "$FILE" -C "/opt/"
 
 
-xdg-icon-resource install --novendor --size 128 "/opt/WebStorm/bin/webide.png" "webstorm"
+xdg-icon-resource install --novendor --size 128 "/opt/WebStorm-181.5281.31/bin/webstorm.png" "webstorm"
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 
 cat <<EOF | tee /usr/share/applications/webstorm.desktop
