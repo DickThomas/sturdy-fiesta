@@ -17,7 +17,7 @@ if [[ ! -f "$FILE" ]]; then
 fi
 
 mkdir -p "/opt/pycharm"
-tar -xvf "$FILE" -C "/opt/pycharm"
+tar -xvf "$FILE" -C "/opt/pycharm/"
 
 ln -sf /opt/pycharm/pycharm-community-2016.3.2/bin/pycharm.sh /usr/bin/pycharm
 
