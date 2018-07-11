@@ -12,7 +12,7 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root apt -y remove rambox"
+			"command": "run-as-root apt -y purge rambox"
 		},
 		"status": { "command": "dpkg-query -l rambox" }
 	}
