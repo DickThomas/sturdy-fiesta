@@ -1,0 +1,18 @@
+{
+	"icon": "refresh",
+	"label": "Refresh Repo",
+	"description": "Refresh the plugin repo.",
+	"license": "GPLv3",
+	"category": "System",
+	"scripts": {
+		"exec": {
+			"label": "Refresh",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": ""
+		},
+		"status": { "command": "" }
+	}
+}
