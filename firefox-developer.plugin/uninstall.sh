@@ -1,4 +1,5 @@
 #!/bin/bash
 
-rm -f "/usr/share/applications/peek.desktop"
-rm -rf "/opt/peek/"
+rm -f "/usr/bin/firefox-developer"
+rm -f "/usr/local/share/applications/firefox-developer.desktop"
+rm -rf "/opt/firefox-developer"
