@@ -1,7 +1,9 @@
 #!/bin/bash
 
-curl https://github.com/phw/peek/releases/download/1.3.1/peek-1.3.1-0-x86_64.AppImage -o peek.AppImage
+wget https://github.com/phw/peek/releases/download/1.3.1/peek-1.3.1-0-x86_64.AppImage
+
 mkdir -p /opt/peek
+mv peek-1.3.1-0-x86_64.AppImage peek.AppImage
 chmod +x peek.AppImage
 mv peek.AppImage /opt/peek/
 cp /opt/cedema/plugins/peek.plugin/peek.png /opt/peek/peek.png
