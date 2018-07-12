@@ -1,5 +1,5 @@
 {
-	"icon": "android-studio",
+	"icon": "studio",
 	"label": "Android Studio",
 	"description": "Official IDE for Android application development, based on IntelliJ IDEA.",
 	"license": "Apache 2.0",
