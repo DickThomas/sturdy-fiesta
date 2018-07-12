@@ -8,6 +8,9 @@ there have been updates
 
 ### todo
 
-* detect date and last time stam
-* pull any changes
-* if in doubt new and start over? (dangerous!!!)
+* detect date and last time stamp? 
+	* done but needs testing
+
+## Icons
+
+Icons belong to the projects they are from 
