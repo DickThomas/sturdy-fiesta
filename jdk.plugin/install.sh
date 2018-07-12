@@ -12,8 +12,8 @@ tar xvf jdk-10.0.1_linux-x64_bin.tar.gz -C /opt/jdk/
 
 
 
-update-alternatives --install /usr/bin/java java /opt/jdk/jdk-10.0.1/bin/java 1075
-update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk-10.0.1/bin/javac 1075
+update-alternatives --install /usr/bin/java java /opt/jdk/jdk-10.0.1/bin/java 1099
+update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk-10.0.1/bin/javac 1099
 
 
 
